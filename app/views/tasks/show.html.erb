@@ -1,0 +1,10 @@
+<h1>Look at this Beauty: <%= @task.title %></h1>
+
+<h3>Details : <%= @task.details %></h3>
+
+
+<br>
+
+<%= link_to "Go Back", tasks_path%>
+<%= link_to "Edit", edit_task_path(@task)%>\
+<%= link_to "Delete", task_path(@task), method: :delete, data: {confirm: "Really?"}%>
